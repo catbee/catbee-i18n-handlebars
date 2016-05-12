@@ -11,7 +11,9 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel src -d dist",
-    "test": "lab -T node_modules/babel-lab test -l"
+    "test": "lab -T node_modules/babel-lab test -l",
+    "codecov": "lab -T node_modules/babel-lab test -l -r lcov | codecov",
+    "test-cov-html": "lab -T node_modules/babel-lab test -l -r html -o codecov.html"
   },
   "dependencies": {
     "i18n-base-methods": "^0.0.1",
@@ -26,6 +28,7 @@
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-stage-2": "^6.5.0",
     "catberry-locator": "^2.1.0",
+    "codecov.io": "^0.1.6",
     "lab": "^10.4.0"
   },
   "keywords": [
