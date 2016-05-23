@@ -1,8 +1,9 @@
-const i18n = require('./i18n');
+const I18n = require('./i18n');
 
 module.exports = {
   register (locator) {
     try {
+      const i18n = I18n(locator);
       const handlebars = locator.resolve('handlebars');
 
       handlebars.registerHelper('_t', i18n._t);
