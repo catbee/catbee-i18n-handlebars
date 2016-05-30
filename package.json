@@ -2,7 +2,7 @@
   "name": "catbee-i18n-handlebars",
   "description": "catbee i18n service handlebars helpers",
   "author": "Eugeny Dementev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/catbee/catbee-i18n-handlebars.git"
